@@ -6,7 +6,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: Softsuave@123
-    url: jdbc:mysql://localhost:3306/music-video
+    url: jdbc:mysql://localhost:3306/ms-user
 #    jpa
   jpa:
     hibernate:
