@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  gateway:
+    container_name: gateway
+    build: ./gateway
+    ports:
+      - 8080:8080
+  registry:
+    container_name: serviceRegistry
+    build: ./ServiceRegistry
+    ports:
+      - 8761:8761

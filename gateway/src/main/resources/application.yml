@@ -7,14 +7,14 @@ spring:
     gateway:
       routes:
         - id: USER-SERVICE
-          uri: http://localhost:8081/
-#          uri: lb://USER
+#          uri: http://localhost:8081/
+          uri: lb://USER/
           predicates:
             - Path=/user/**
 
         - id: MOVIES-SERVICE
-          uri: http://localhost:8082/
-#          uri: lb://MOVIES
+#          uri: http://localhost:8082/
+          uri: lb://MOVIES/
           predicates:
             - Path=/movies/**
 
