@@ -1,3 +1,30 @@
+# version: "3"
+
+# services:
+#   registry:
+#     container_name: eureka-server
+#     build: ./ServiceRegistry
+#     ports:
+#       - 8761:8761
+#   gateway:
+#     container_name: gateway
+#     build: ./gateway
+#     depends_on:
+#       - registry
+#     environment:
+#       SPRING_APPLICATION_JSON: '{"eureka":{"client":{"serviceUrl":{"defaultZone":"http://registry:8761/eureka"}}}}'
+#     ports:
+#       - 8080:8080
+#   user:
+#     container_name: user
+#     build: ./user
+#     depends_on:
+#       - registry
+#     environment:
+#       SPRING_APPLICATION_JSON: '{"eureka":{"client":{"serviceUrl":{"defaultZone":"http://registry:8761/eureka"}}}}'
+#     ports:
+#       - 8081:8081
+
 version: "3"
 
 services:
